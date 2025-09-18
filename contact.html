@@ -1,0 +1,52 @@
+
+
+{% extends 'base.html' %}
+    {% load static %}
+
+
+
+{% block content %}
+ 
+   
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<section class="page-banner" style="background: url('images/contact-bg.jpg') center/cover no-repeat;">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p class="lead">We’re here to help you. Reach out anytime!</p>
+      {% load static %}
+  <img src="{% static 'image/image3.jpg' %}" alt="Contact Banner">
+  </div>
+</section>
+
+<!-- Contact Info -->
+<section class="container section contact-info">
+  <h2>Get in Touch</h2>
+  <p>We would love to hear from you! Use the form below or reach us via contact details.</p>
+  <p><strong>Address:</strong> 123, WsCube Tech Street, Jaipur, India</p>
+  <p><strong>Phone:</strong> +91 98765 43210</p>
+  <p><strong>Email:</strong> info@wscubetech.com</p>
+</section>
+
+<!-- Contact Form -->
+<section class="container section form-section">
+  <h2>Send Us a Message</h2>
+  <form action="#" method="post" class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" placeholder="Your Subject" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+
+ 
+{% endblock %}

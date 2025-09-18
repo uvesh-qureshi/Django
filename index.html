@@ -1,0 +1,119 @@
+
+{% extends 'base.html' %}
+    {% load static %}
+
+
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+{% block content %}
+
+<marquee onmouseover ="stop()" onmouseout="start()">
+  Welcome to Uvesh Qureshi ji  
+  {% for news in newsData %}
+  <a href="/newsdetails/{{news.news_slug}}">  {{ news.news_title }} &nbsp;&nbsp; </a>
+  {% endfor %}
+</marquee>
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- Banner -->
+<section class="page-banner" style="background: url('images/index-bg.jpg') center/cover no-repeat;">
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <p class="lead">We build fast and modern websites for you.</p>
+      {% load static %}
+  <img src="{% static 'image/image2.jpg' %}" alt="Contact Banner">
+  </div>
+</section>
+
+<div class="row">
+  {% for n in servicesData %}
+  <div class="col-lg-4 col-md-6">
+    <div class="single-feature mb-30">
+      <div class="title d-flex flex-row pb-20">
+        <span class="{{n.service_icon}}"> </span>
+        <h4><a href="#">Expert Technicians</a></h4>
+      </div>
+      <p>
+        Usage of the Internet is becoming more common due to 
+
+      </p>
+
+    </div>
+{% endfor %}
+  <div class="row">
+  <div class="col-lg-4 col-md-6">
+    <div class="single-feature mb-30">
+      <div class="title d-flex flex-row pb-20">
+        <span class="'inr inr-user"> </span>
+        <h4><a href="#">Expert Technicians</a></h4>
+        <p>
+          this is my page of refresh
+        </p>
+      </div>
+<div class="row">
+  <div class="col-lg-4 col-md-6">
+    <div class="single-feature mb-30">
+      <div class="title d-flex flex-row pb-20">
+        <span class="'inr inr-user"> </span>
+        <h4><a href="#">begining Technicians</a></h4>
+        <p>
+          {{n.services_des |safe}}
+        </p>
+      </div>
+      <div class="row">
+  <div class="col-lg-4 col-md-6">
+    <div class="single-feature mb-30">
+      <div class="title d-flex flex-row pb-20">
+        <span class="'inr inr-user"> </span>
+        <h4><a href="#">Around Technicians</a></h4>
+        <p>
+            {{n.services_des| safe}}
+        </p>
+      </div>
+      <div class="row">
+  <div class="col-lg-4 col-md-6">
+    <div class="single-feature mb-30">
+      <div class="title d-flex flex-row pb-20">
+        <span class="'inr inr-user"> </span>
+        <h4><a href="#">american Technicians</a></h4>
+        <p>
+          this is my page of refresh
+        </p>
+      </div>
+      <div class="row">
+  <div class="col-lg-4 col-md-6">
+    <div class="single-feature mb-30">
+      <div class="title d-flex flex-row pb-20">
+        <span class="'inr inr-user"> </span>
+        <h4><a href="#">Expert Technicians</a></h4>
+        <p>
+          this is my page of refresh
+        </p>
+      </div>
+      <div class="row">
+  <div class="col-lg-4 col-md-6">
+    <div class="single-feature mb-30">
+      <div class="title d-flex flex-row pb-20">
+        <span class="'inr inr-user"> </span>
+        <h4><a href="#">Expert Technicians</a></h4>
+        <p>
+          this is my page of refresh
+        </p>
+      </div>
+        </div>
+
+</div>
+
+<!-- Content -->
+<section class="container section">
+  <h2>Our Mission</h2>
+  <p>We create solutions that help your business grow online.</p>
+</section>
+
+{% endblock %}
+<!-- Footer -->

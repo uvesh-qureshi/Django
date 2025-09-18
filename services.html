@@ -1,0 +1,64 @@
+   
+   
+   
+   
+   {% extends 'base.html' %}
+    {% load static %}
+
+
+
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<section class="page-banner" style="background: url('images/services-bg.jpg') center/cover no-repeat;">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p class="lead">We offer high quality services for your business.</p>
+    <img src="{% static 'image/image5.jpg' %}" alt="Services Icon" width="1000px" height="500px">
+  </div>
+</section>
+
+<section class="container section services-grid">
+  <div class="service-card">
+    <h3>Web Development</h3>
+    <img src=  "{% static 'image/image14.avif' %}" alt="Web Development" width="100px" height="100px">
+    <p>Responsive and modern websites built for all devices.</p>
+  </div>
+  <div class="col-12">
+    <form method="get">
+      <label>Button</label>
+      <input type="text" name="servicename",value=''/>
+      <input type='sumit' value="Search"/>
+    </form>
+  </div>
+<section class="container section services-grid">
+  <div class="service-card">
+    <h3>Web Development</h3>
+    <img src=  "{% static 'image/image14.avif' %}" alt="Web Development" width="100px" height="100px">
+    <p>Responsive and modern websites built for all devices.</p>
+  </div>
+<section class="container section services-grid">
+  <div class="service-card">
+    <h3>Web Development</h3>
+    <img src=  "{% static 'image/image14.avif' %}" alt="Web Development" width="100px" height="100px">
+    <p>Responsive and modern websites built for all devices.</p>
+  </div>
+  <div class="service-card">
+    <h3>Mobile Apps</h3>
+    <img src="{% static 'image/image13.avif' %}" alt="Mobile Apps" width="100px" height="100px">
+    <p>Custom mobile applications for Android and iOS platforms.</p>
+  </div>
+  <div class="service-card">
+    <h3>Database Design</h3>
+    
+  {% load static %}
+  <img src="{% static 'image/image11.avif' %}" alt="Contact Banner" >
+
+
+
+    <p>Secure and scalable database architecture for your apps.</p>
+  </div>
+</section>
+
+
+{% endblock %}

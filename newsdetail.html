@@ -1,0 +1,33 @@
+  
+   {% extends 'base.html' %}
+    {% load static %}
+
+
+
+{% block content %}
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<!-- Banner -->
+<section class="page-banner" style="background: url('images/about-bg.jpg') center/cover no-repeat;">
+  <div class="container">
+    <h1 class="mb-10">{{newsDetails.news_title}}</h1>
+    <p class="lead">Learn more about our team and mission.</p>
+     {% load static %}
+  <img src="{% static 'image/image8.jpg' %}" alt="Contact Banner">
+  </div>
+</section>
+
+<!-- Content -->
+<section class="container section">
+  <h2>Our Story</h2>
+  <p>We are a team of passionate developers and designers committed to delivering high-quality digital solutions. Our goal is to help businesses grow online with modern and responsive technology.</p>
+
+  <h2>Our Vision</h2>
+  <p>To be the leading provider of innovative digital solutions that make businesses successful and users happy.</p>
+</section>
+
+<!-- Footer -->
+
+
+{% endblock %}

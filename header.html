@@ -1,0 +1,36 @@
+  {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Website</title>
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">MyWebsite</a>
+  
+      <ul class="main-nav">
+  <li class="{% if request.path == '/' %}active{% endif %}">
+    <a href="{% url 'home' %}">Home</a>
+  </li>
+  <li class="{% if request.path == '/services/' %}active{% endif %}">
+    <a href="{% url 'services' %}">Services</a>
+  </li>
+  <li class="{% if request.path == '/about/' %}active{% endif %}">
+    <a href="{% url 'about' %}">About</a>
+  </li>
+  <li class="{% if request.path == '/contact/' %}active{% endif %}">
+    <a href="{% url 'contact' %}">Contact</a>
+  </li>
+</ul>
+
+
+  </div>
+</header>
